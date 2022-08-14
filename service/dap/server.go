@@ -266,11 +266,11 @@ var DefaultLoadConfig = proc.LoadConfig{
 
 const (
 	// When a user examines a single string, we can relax the loading limit.
-	maxSingleStringLen = 4 << 10 // 4096
+	maxSingleStringLen = 4 << 20 // 4096
 	// Results of a call are single-use and transient. We need to maximize
 	// what is presented. A common use case of a call injection is to
 	// stringify complex data conveniently.
-	maxStringLenInCallRetVars = 1 << 10 // 1024
+	maxStringLenInCallRetVars = 1 << 20 // 1024
 )
 
 var (
